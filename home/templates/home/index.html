@@ -1,0 +1,119 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+{% block body %}
+<style>
+
+.card{
+  border: 1px solid #ccc;
+  transition: box-shadow .3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.btn{
+  border: 1px solid #ccc;
+
+}
+
+.btn:hover {
+  box-shadow: 0 0 11px rgba(
+55, 204, 107
+); 
+}
+</style>
+<div class="alert alert-success alert-dismissible fade show my-0" role="alert">
+    <strong>Hey Everybody Prajwal Sapaliya is here</strong> You can contact me if you need help in editing
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="{% static 'images/1.jpg'%}" class="d-block w-100" height ="700px" alt="Prajwal">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static 'images/2.jpg'%}" class="d-block w-100" height ="700px" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/6.jpg'%}" class="d-block w-100" height ="500px" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+  <div class="container my-4  col d-flex justify-content-center">
+    <div class="row ">
+      <div class="card col-auto mx-2" style="width: 18rem;">
+        <img src="{% static 'images/5.jpg' %}" class="img-thumbnail mt-3 mx-4 " alt="diwali" style=" height: 225px;">
+        <div class="card-body text-center">
+          <h5 class="card-title text-success text-center fw-bold">Manipulation</h5>
+
+          <a href="/pricing" class="btn btn-primary">Pricing</a>
+        </div>
+      </div>
+
+      <div class="card col-auto mx-2" style="width: 18rem;">
+        <img src="{% static 'images/4.jpg' %}" class="img-thumbnail mt-3 mx-4 " alt="diwali" style=" height: 225px;">
+        <div class="card-body text-center">
+          <h5 class="card-title text-success text-center fw-bold">Vector Art</h5>
+
+          <a href="/pricing" class="btn btn-primary">Pricing</a>
+        </div>
+      </div>
+      <div class="card col-auto mx-2" style="width: 18rem;">
+        <img src="{%static 'images/3.jpg'%}" class="img-thumbnail mt-3 mx-4 " alt="diwali" style=" height: 225px;">
+        <div class="card-body text-center">
+          <h5 class="card-title text-success text-center fw-bold">Retouching</h5>
+
+          <a href="/pricing" class="btn btn-primary">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5" id="about">
+    <div class="row ">
+      <div class="col">
+        <div class="card-block px-2">
+          <h4 class="card-title">About</h4>
+          <h5 class="card-text">
+            Prajwal Sapaliya is an Dancer ,Actor ,Model ,Rapper, social media influencer and a Multitalented guy.Prajwal
+            is also an artist who draw painting of various Actor his painting is available on his social media handle.He
+            is well known for his Passion Towards editing photos and videos.Prajwal Sapaliya also run two sucessfull
+            instagram pages of around thousands of followers.He also has his Youtube channel where he Create Short films
+            .He has 30 thousands plus views on his youtube channel.Prajwal Sapaliya has one of the richest experiences
+            in the field of Editing and Creativity.He is the co-founder of Editingtricx.</h5>
+          <a href="/aboutme" class="btn btn-primary">About Prajwal</a>
+        </div>
+      </div>
+      <div class="col-auto">
+        <img src="{% static 'images/7.jpg' %}"   class="rounded-circle"  class="imageinindex " height="220" width="220" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+   <footer class="container-fluid bg-dark my-0 py-3 text-light ">
+    <h5 class="mb-0 text-center">© 2021-2021 PrajwalSapaliyaEditz.com</h5>
+    <h5 class="mb-0 text-center">
+      <a href="#">Back to top |</a>
+      <a href="/contact">Contact me |</a>
+      <a href="/testimonial">Testimonial</a>
+    </h5>
+  </footer>
+{% endblock body %}
